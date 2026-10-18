@@ -1,23 +1,23 @@
 ---
-sidebar_position: 11
-title: Events
-description: Monitor off-chain movement of value and smart contract changes.
+Sidebar_position: 11
+Título: Eventos
+Descripción: Monitorear el movimiento fuera de la cadena de valor y los cambios de contrato inteligentes.
 ---
 
-Events are the mechanism that applications off-chain can use to monitor movement of value of any Stellar operation, as well as custom events in contracts on-chain.
+Los eventos son el mecanismo que las aplicaciones fuera de la cadena pueden usar para monitorear el movimiento del valor de cualquier operación de Stellar, así como eventos personalizados en contratos en la cadena.
 
-## How are events emitted?
+## ¿Cómo se emiten los eventos?
 
-`ContractEvents` are emitted in Stellar Core's `TransactionMeta`. The location of events will depend on the version of `TransactionMeta` emitted. You can see in the [TransactionMetaV3] XDR below that for Soroban transactions, there is a `sorobanMeta` field containing `SorobanTransactionMeta` which includes both `events` (custom events from contracts) and `diagnosticEvents`. Note that `events` will only be populated if the transaction succeeds.
+Los "Eventos de Contrato" se emiten en la "Meta de Transacción" de Stellar Core. La ubicación de los eventos dependerá de la versión de 'TransactionMeta' emitida. Puede ver en el [TransactionMetaV3] XDR a continuación que para las transacciones de Soroban, hay un campo 'sorobanMeta' que contiene 'SorobanTransactionMeta' que incluye tanto 'eventos' (eventos personalizados de contratos) como 'eventos de diagnóstico'. Tenga en cuenta que los "eventos" solo se rellenarán si la transacción tiene éxito.
 
-[TransactionMetaV4] is more complex because it supports events for not only Soroban, but also classic operations, fees, and refunds. The top-level `events` vector is used for transaction level events, and currently contains `fee` events for both the initial fee charged and the refund (if applicable). Events tied to operations can be found under `OperationMetaV2`.
+[TransactionMetaV4] es más complejo porque admite eventos no solo para Soroban, sino también para operaciones clásicas, tarifas y reembolsos. El vector de "eventos" de nivel superior se utiliza para eventos de nivel de transacción, y actualmente contiene eventos de "tarifa" tanto por la tarifa inicial cobrada como por el reembolso (si corresponde). Los eventos vinculados a las operaciones se pueden encontrar en 'OperationMetaV2'.
 
-[transactionmetav3]: #transactionmetav3
-[transactionmetav4]: #transactionmetav4
+Sidebar_position: 11
+---
 
-### ContractEvent
+---
 
-An event's topics don't have to be made of the same type: you can mix different types.
+Los temas de un evento no tienen que ser del mismo tipo: puedes mezclar diferentes tipos.
 
 An event also contains a data object of any value or type, including [custom types](../contract-development/types/custom-types.mdx) defined by contracts using `#[contracttype]`:
 
@@ -29,7 +29,7 @@ struct ContractEvent
     ExtensionPoint ext;
 
     ContractID* contractID;
-    ContractEventType type;
+Los "Eventos de Contrato" se emiten en la "Meta de Transacción" de Stellar Core. La ubicación de los eventos dependerá de la versión de 'TransactionMeta' emitida. Puede ver en el [TransactionMetaV3] XDR a continuación que para las transacciones de Soroban, hay un campo 'sorobanMeta' que contiene 'SorobanTransactionMeta' que incluye tanto 'eventos' (eventos personalizados de contratos) como 'eventos de diagnóstico'. Tenga en cuenta que los "eventos" solo se rellenarán si la transacción tiene éxito.
 
     union switch (int v)
     {
@@ -124,16 +124,16 @@ struct TransactionMetaV4
     LedgerEntryChanges txChangesAfter;   // tx level changes after operations are
                                          // applied if any
     SorobanTransactionMetaV2* sorobanMeta; // Soroban-specific meta (only for
-                                           // Soroban transactions).
+ // Transacciones sorobanas). 
 
-    TransactionEvent events<>; // Used for transaction-level events (like fee payment)
-    DiagnosticEvent diagnosticEvents<>; // Used for all diagnostic information
+ Eventos de TransactionEvent <>; // Se utiliza para eventos a nivel de transacción (como el pago de tarifas) 
+ DiagnósticoEventos de diagnóstico de eventos <>; // Se utiliza para toda la información de diagnóstico 
 };
-```
+"'
 
-[Link](https://github.com/stellar/stellar-xdr/blob/4b7a2ef7931ab2ca2499be68d849f38190b443ca/Stellar-ledger.x#L440-L522) to the XDR above.
+"'
 
-### Event types
+Sidebar_position: 11
 
 There are three `ContractEventType`'s -
 
@@ -170,7 +170,7 @@ The `fn_return` diagnostic event is emitted when a contract call completes and c
 
 Regular `ContractEvents` should convey information about state changes. `diagnosticEvents` on the other hand contain events that are not useful for most users, but may be helpful in debugging issues or building the contract call stack. Because they won't be used by most users, they can be optionally enabled because they are not hashed into the ledger, and therefore are not part of the protocol. This is done so a stellar-core node can stay in sync with the network while emitting these events that normally would not be useful for most users.
 
-Due to the fact that a node with diagnostic events enabled will be executing code paths that diverge from a regular node, we highly encourage only using this feature on watcher node (nodes where `NODE_IS_VALIDATOR=false` is set).
+ 1. El símbolo "fn_call". 
 
 ## Tracking the movement of value
 
