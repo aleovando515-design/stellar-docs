@@ -1,47 +1,47 @@
-# Stellar Documentation and API Reference 🌌 <!-- omit in toc -->
+  ##) Las relaciones públicas deben ser revisadas y aprobadas antes de fusionarse. Busque una aprobación o una pregunta de seguimiento.        Documentación estelar y referencia API 🌌           Documentación estelar y referencia API 🌌                 Documentación estelar y referencia API 🌌        <!--      Documentación estelar y referencia API 🌌           Documentación estelar y referencia API 🌌         <!-- omitir en toc -->           Documentación estelar y referencia API 🌌           <!-- omitir en toc -->           Documentación estelar y referencia API 🌌           <!-- omitir en toc -->          Documentación estelar y referencia API 🌌          <!-- omitir en toc -->          Documentación estelar y referencia API 🌌        <!--      Documentación estelar y referencia API 🌌           Documentación estelar y referencia API 🌌        <!-- omitir en toc -->           Documentación estelar y referencia API 🌌           <!-- omitir en toc -->           Documentación estelar y referencia API 🌌           <!-- omitir en toc -->           Documentación estelar y referencia API 🌌           <!-- omitir en toc -->          Documentación estelar y referencia API 🌌          <!-- omitir en toc -->          Documentación estelar y referencia API 🌌        <!--      Documentación estelar y referencia API 🌌           Documentación estelar y referencia API 🌌        
 
-Welcome to the official home repository for [Documentation][docs] for the [Stellar network][stellar].
+-[Estelar]Estelar]
 
-## Table of Contents <!-- omit in toc -->
+##      Tabla de contenidos      <!-- omitir en toc -->
+4815163344708337
+- [Contribuyendo](#contribuyendo)
+- [Inicio rápido.](
+  - [Requisitos previos](#prerrequisitos)
+  - [desarrollo](#desarrollo)
+- [Estructura del repositorio.](#repositorio-estructura)
+- [Usando Markdown.](#using-markdown)
+  - [Básicos de Markdown](#markdown-básicas)
+  - [Marcado personalizado](#clatura)
+    - [Alerta](#alerta)
+    - [Ejemplo de código.](#ejemplo de código)
 
-- [Contributing](#contributing)
-- [Quick Start](#quick-start)
-  - [Prerequisites](#prerequisites)
-  - [Development](#development)
-- [Repository Structure](#repository-structure)
-- [Using Markdown](#using-markdown)
-  - [Markdown Basics](#markdown-basics)
-  - [Custom Markdown](#custom-markdown)
-    - [Alert](#alert)
-    - [Code Example](#code-example)
+##      Contribuyendo    
 
-## Contributing
+¡Las contribuciones son más que bienvenidas! ¡Gracias! 🎉
 
-Contributions are more than welcome! Thank you! 🎉
+     Para
+detalles sobre cómo contribuir a los diversos repositorios de Stellar. Por favor, tome especial
+    Nota del      [Código de conducta.][CoC].
 
-Before diving in, please read our [Stellar Contribution Guide][contrib] for
-details on contributing to Stellar's various repositories. Please take special
-note of the [code of conduct][coc].
+   Nuestro sitio de documentación se construye utilizando     [Docusaurus][Docusaurus]. El contenido es
+   escrito en     [MDX][mdx], que añade un montón de posibilidades interesantes. Incluso si estás
+No está familiarizado con el marcado simple, ¡no temas! Todavía puedes contribuir en un
+útil y significativa. Markdown es súper fácil de aprender, y vendrá bastante.
+Naturalmente, después de solo un poco de práctica. Siempre puedes ayudar a corregir errores tipográficos, ortografía,
+Y enlaces rotos, también.
 
-Our documentation site is built using [Docusaurus][docusaurus]. The content is
-written in [MDX][mdx], which adds a lot of cool possibilities. Even if you're
-unfamiliar with plain markdown, do not fear! You can still contribute in a
-helpful and meaningful way. Markdown is super easy to learn, and will come quite
-naturally after only a bit of practice. You can always help fix typos, spelling,
-and broken links, too.
+Puede contribuir a los documentos de varias maneras:
 
-You can contribute to the docs in several ways:
+-   ¿Ves algo que necesita ser corregido en los documentos, como un error en el código o un error tipográfico? Archivo a   [solicitud de extracción (PR)](https://github.com/stellar/stellar-docs/pulls)  proponer corregir el error;
+-  ¿Crees que falta contenido útil en los documentos, como una guía específica de instrucciones o una pieza de contenido explicativo? Archivo y  [cuestión](https://github.com/stellar/stellar-docs/issues)  explicar lo que le gustaría ver (asegúrese de buscar los problemas existentes para evitar la duplicación);
+   Documentación estelar y referencia API 🌌   <!-- omitir en toc -->Bienvenido al repositorio oficial de...     Contribuyendo ](https://github.com/stellar/stellar-docs/issues) explaining what you’d like to see (these will be added to the Ideas section on the [Dev Docs board](https://github.com/orgs/stellar/projects/56/views/1) for discussion);
+  Hacer  
 
-- See something that needs to be fixed in the docs, like an error in the code or a typo? File a [pull request (PR)](https://github.com/stellar/stellar-docs/pulls) proposing to correct the error;
-- Think there is helpful content missing from the docs, like a specific how-to guide or piece of explanatory content? File an [issue](https://github.com/stellar/stellar-docs/issues) explaining what you’d like to see (be sure to search existing issues to avoid duplication);
-- Have an idea that could make the docs better, like a structural change or a new section idea? File an [issue](https://github.com/stellar/stellar-docs/issues) explaining what you’d like to see (these will be added to the Ideas section on the [Dev Docs board](https://github.com/orgs/stellar/projects/56/views/1) for discussion);
-- Want to complete an existing issue? Search through the issues to find something to work on! Issues without an assignee and labeled as a “Good First Issue” or with “Help Wanted” are great places to start! Once you’ve selected an issue to work on, file a PR with your proposed fix.
+#alerta
 
-No matter what you contribute, whether a PR or an issue, you can expect to receive a response from docs maintainers within one week.
-
-- PRs need to be reviewed and approved before merging. Look for either an approval or a follow-up question.
-- Issues will be prioritized, labeled, and assigned (if possible). You can check the status of your issue on the Dev Docs board. The status of issues according to the column is:
-  - Ideas: these issues are being actively discussed. Ideas will either be discarded or repurposed into an actionable issue and added to the queue within three weeks.
+#alerta
+) Issues will be prioritized, labeled, and assigned (if possible). You can check the status of your issue on the Dev Docs board. The status of issues according to the column is:
+  <!-- omitir en toc --> Bienvenido al repositorio oficial de...   
   - Backlog: these issues are not prioritized or actively being worked on.
   - To Do: these issues are prioritized and will be worked on soon.
   - In Progress: these issues are currently being worked on.
